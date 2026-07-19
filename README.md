@@ -62,7 +62,7 @@ atalaya-studio/
 
 ### 1. Clonar o descargar el proyecto
 
-git@github.com:junioralvarez1090/Atalaya-Studio-Web.git
+https://github.com/junioralvarez1090/Atalaya-Studio-Web
 
 ### 2. Instalar dependencias del servidor
 
