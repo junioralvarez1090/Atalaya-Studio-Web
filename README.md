@@ -62,8 +62,7 @@ atalaya-studio/
 
 ### 1. Clonar o descargar el proyecto
 
-git clone https://tu-repo/atalaya-studio.git
-cd atalaya-studio -- actualizar
+git@github.com:junioralvarez1090/Atalaya-Studio-Web.git
 
 ### 2. Instalar dependencias del servidor
 
