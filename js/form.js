@@ -7,7 +7,7 @@
 import { showToast } from './main.js';
 
 /** URL del endpoint de la API (cambiar si el server corre en otro puerto) */
-const API_URL = 'http://localhost:3000/api/contact';
+const API_URL = 'https://atalaya-studio-web.onrender.com/api/contact';
 
 /** Patrón de validación de email */
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
