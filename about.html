@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce al equipo detrás de Atalaya Studio. Nuestra misión, valores y trayectoria en el mundo digital.">
+    <meta name="theme-color" content="#0F172A">
+
+    <title>Atalaya Studio | Nosotros</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="menu-overlay" aria-hidden="true"></div>
+
+    <header class="header" role="banner">
+        <a href="index.html" class="header__logo" aria-label="Atalaya Studio - Inicio">
+            <img src="img/logo.svg" alt="Atalaya Studio" width="160" height="40">
+        </a>
+
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+            ☰
+        </button>
+
+        <nav class="header__menu" id="menu" role="navigation" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar a modo oscuro">🌙</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO ABOUT -->
+        <section class="about-hero" aria-label="Encabezado de Nosotros">
+            <div class="container">
+                <h2 class="reveal">Sobre Nosotros</h2>
+                <p class="reveal">Somos un equipo apasionado por la innovación digital. Desde nuestra atalaya, visualizamos el futuro y lo construimos hoy.</p>
+            </div>
+        </section>
+
+        <!-- MISIÓN -->
+        <section aria-label="Nuestra misión">
+            <div class="container">
+                <div style="max-width:800px;margin:0 auto;text-align:center;">
+                    <h2 class="reveal">Nuestra Misión</h2>
+                    <p class="reveal" style="color:var(--color-text-muted);font-size:1.1rem;line-height:1.85;">
+                        En Atalaya Studio creemos que cada negocio merece una presencia digital que refleje su verdadera esencia. Nuestra misión es democratizar el acceso a soluciones digitales de alta calidad, combinando diseño excepcional, tecnología de vanguardia e inteligencia artificial para crear experiencias que conectan marcas con personas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- VALORES -->
+        <section style="background:var(--color-bg-alt);" aria-label="Nuestros valores">
+            <div class="container text-center">
+                <h2 class="reveal">Lo que nos define</h2>
+                <p class="reveal" style="color:var(--color-text-muted);max-width:500px;margin:0 auto;">
+                    Principios que guían cada decisión y cada línea de código que escribimos.
+                </p>
+
+                <div class="valores__grid">
+                    <article class="valor-card reveal reveal-delay-1">
+                        <div class="valor-card__number" aria-hidden="true">01</div>
+                        <h3>Excelencia Técnica</h3>
+                        <p>Cada proyecto se construye con estándares de calidad profesionales. Código limpio, arquitecturas sólidas y rendimiento optimizado.</p>
+                    </article>
+
+                    <article class="valor-card reveal reveal-delay-2">
+                        <div class="valor-card__number" aria-hidden="true">02</div>
+                        <h3>Innovación Constante</h3>
+                        <p>Integramos las últimas tecnologías, incluyendo inteligencia artificial, para ofrecer soluciones que marcan la diferencia en el mercado.</p>
+                    </article>
+
+                    <article class="valor-card reveal reveal-delay-3">
+                        <div class="valor-card__number" aria-hidden="true">03</div>
+                        <h3>Compromiso Real</h3>
+                        <p>No somos proveedores, somos socios estratégicos. Nos involucramos profundamente en cada proyecto para garantizar resultados medibles.</p>
+                    </article>
+
+                    <article class="valor-card reveal">
+                        <div class="valor-card__number" aria-hidden="true">04</div>
+                        <h3>Transparencia Total</h3>
+                        <p>Comunicación abierta, presupuestos claros sin sorpresas y procesos visibles en cada etapa del desarrollo.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS -->
+        <section class="stats" aria-label="Estadísticas">
+            <div class="container text-center">
+                <h2 class="reveal">Números que hablan</h2>
+                <div class="stats__grid">
+                    <div class="stat-item reveal reveal-delay-1">
+                        <div class="stat-item__number">50+</div>
+                        <div class="stat-item__label">Proyectos entregados</div>
+                    </div>
+                    <div class="stat-item reveal reveal-delay-2">
+                        <div class="stat-item__number">98%</div>
+                        <div class="stat-item__label">Clientes satisfechos</div>
+                    </div>
+                    <div class="stat-item reveal reveal-delay-3">
+                        <div class="stat-item__number">5</div>
+                        <div class="stat-item__label">Años de experiencia</div>
+                    </div>
+                    <div class="stat-item reveal">
+                        <div class="stat-item__number">24h</div>
+                        <div class="stat-item__label">Tiempo de respuesta</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta" aria-label="Llamada a la acción">
+            <h2>Trabajemos juntos</h2>
+            <p>Tu próximo proyecto digital puede empezar hoy. Conversemos sobre tus ideas.</p>
+            <a href="index.html#contacto" class="btn">
+                <span class="btn-text">Contactar al Equipo</span>
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer__grid">
+            <div class="footer__brand">
+                <img src="img/logo.svg" alt="Atalaya Studio" width="140" height="36">
+                <p>Transformamos ideas en experiencias digitales memorables. Estudio creativo con sede en Latinoamérica.</p>
+            </div>
+            <div>
+                <h4>Navegación</h4>
+                <nav class="footer__links" aria-label="Navegación del pie de página">
+                    <a href="index.html">Inicio</a>
+                    <a href="about.html">Nosotros</a>
+                    <a href="services.html">Servicios</a>
+                    <a href="index.html#contacto">Contacto</a>
+                </nav>
+            </div>
+            <div>
+                <h4>Servicios</h4>
+                <nav class="footer__links" aria-label="Servicios del pie de página">
+                    <a href="services.html">Diseño Web</a>
+                    <a href="services.html">Desarrollo</a>
+                    <a href="services.html">SEO</a>
+                    <a href="services.html">Branding</a>
+                </nav>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer__grid">
+            <div class="footer__brand">
+                <img src="img/logo.svg" alt="Atalaya Studio" width="140" height="36">
+                <p>Transformamos ideas en experiencias digitales memorables. Estudio creativo con sede en Latinoamérica.</p>
+            </div>
+            <div>
+                <h4>Navegación</h4>
+                <nav class="footer__links" aria-label="Navegación del pie de página">
+                    <a href="index.html">Inicio</a>
+                    <a href="about.html">Nosotros</a>
+                    <a href="services.html">Servicios</a>
+                    <a href="index.html#contacto">Contacto</a>
+                </nav>
+            </div>
+            <div>
+                <h4>Servicios</h4>
+                <nav class="footer__links" aria-label="Servicios del pie de página">
+                    <a href="services.html">Diseño Web</a>
+                    <a href="services.html">Desarrollo</a>
+                    <a href="services.html">SEO</a>
+                    <a href="services.html">Branding</a>
+                </nav>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 Atalaya Studio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Volver al inicio">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+    </button>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

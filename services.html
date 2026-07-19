@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios de Atalaya Studio: Diseño web, desarrollo a medida, SEO, branding y estrategia digital con inteligencia artificial.">
+    <meta name="theme-color" content="#0F172A">
+
+    <title>Atalaya Studio | Servicios</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="menu-overlay" aria-hidden="true"></div>
+
+    <header class="header" role="banner">
+        <a href="index.html" class="header__logo" aria-label="Atalaya Studio - Inicio">
+            <img src="img/logo.svg" alt="Atalaya Studio" width="160" height="40">
+        </a>
+
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+            ☰
+        </button>
+
+        <nav class="header__menu" id="menu" role="navigation" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar a modo oscuro">🌙</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SERVICES -->
+        <section class="services-hero" aria-label="Encabezado de Servicios">
+            <div class="container">
+                <h2 class="reveal">Nuestros Servicios</h2>
+                <p class="reveal">Soluciones digitales completas diseñadas para escalar tu negocio. Cada servicio se adapta a tus necesidades específicas.</p>
+            </div>
+        </section>
+
+        <!-- SERVICIOS DETALLADOS -->
+        <section aria-label="Detalle de servicios">
+            <div class="container">
+                <div class="services-detail__grid">
+
+                    <article class="service-detail-card reveal reveal-delay-1">
+                        <div class="service-detail-card__icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <h3>Diseño Web</h3>
+                        <p>Creamos interfaces visualmente impactantes que comunican la esencia de tu marca y guían al usuario hacia la conversión.</p>
+                        <ul>
+                            <li>Diseño responsivo para todos los dispositivos</li>
+                            <li>Prototipado interactivo en Figma</li>
+                            <li>Sistemas de diseño escalables</li>
+                            <li>Optimización de experiencia de usuario (UX)</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-detail-card reveal reveal-delay-2">
+                        <div class="service-detail-card__icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <h3>Desarrollo a Medida</h3>
+                        <p>Construimos aplicaciones web robustas con arquitecturas modernas que crecen con tu negocio sin comprometer el rendimiento.</p>
+                        <ul>
+                            <li>Aplicaciones SPA y SSR con frameworks modernos</li>
+                            <li>APIs RESTful y GraphQL</li>
+                            <li>Integración con bases de datos y servicios externos</li>
+                            <li>Despliegue y CI/CD automatizado</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-detail-card reveal reveal-delay-3">
+                        <div class="service-detail-card__icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </div>
+                        <h3>Consultoría SEO</h3>
+                        <p>Estrategias de posicionamiento basadas en datos que aumentan tu visibilidad orgánica y generan tráfico cualificado.</p>
+                        <ul>
+                            <li>Auditoría técnica completa del sitio</li>
+                            <li>Investigación de palabras clave</li>
+                            <li>Optimización on-page y off-page</li>
+                            <li>Reportes mensuales con métricas reales</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-detail-card reveal">
+                        <div class="service-detail-card__icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3>Branding e Identidad Visual</h3>
+                        <p>Construimos identidades de marca coherentes y memorables que te diferencian de la competencia y generan conexión emocional.</p>
+                        <ul>
+                            <li>Diseño de logotipo y isotipo</li>
+                            <li>Manual de identidad visual</li>
+                            <li>Papelería corporativa y aplicaciones</li>
+                            <li>Guía de tono de voz y comunicación</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-detail-card reveal">
+                        <div class="service-detail-card__icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93"/><path d="M8 6a4 4 0 0 1 8 0"/><path d="M12 18v-8"/><path d="M8 22l4-4 4 4"/><circle cx="12" cy="6" r="2"/></svg>
+                        </div>
+                        <h3>Estrategia Digital con IA</h3>
+                        <p>Integramos inteligencia artificial en tus procesos para automatizar tareas, analizar datos y escalar resultados como nunca antes.</p>
+                        <ul>
+                            <li>Chatbots y asistentes virtuales inteligentes</li>
+                            <li>Automatización de flujos de trabajo</li>
+                            <li>Análisis predictivo de datos</li>
+                            <li>Generación de contenido asistida por IA</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-detail-card reveal">
+                        <div class="service-detail-card__icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                        </div>
+                        <h3>E-Commerce</h3>
+                        <p>Tiendas online completas con experiencia de compra optimizada, pasarelas de pago seguras y gestión de inventario integrada.</p>
+                        <ul>
+                            <li>Desarrollo en Shopify, WooCommerce o custom</li>
+                            <li>Diseño de catálogo de productos</li>
+                            <li>Integración con métodos de pago y envío</li>
+                            <li>Panel de administración intuitivo</li>
+                        </ul>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESO -->
+        <section class="proceso" aria-label="Nuestro proceso">
+            <div class="container text-center">
+                <h2 class="reveal">Cómo Trabajamos</h2>
+                <p class="reveal" style="color:var(--color-text-muted);max-width:500px;margin:0 auto;">
+                    Un proceso claro y transparente que te mantiene informado en cada etapa.
+                </p>
+
+                <div class="proceso__steps">
+                    <div class="proceso__step reveal reveal-delay-1">
+                        <h3>Descubrimiento</h3>
+                        <p>Entendemos tu negocio, objetivos y público para definir la estrategia ideal.</p>
+                    </div>
+                    <div class="proceso__step reveal reveal-delay-2">
+                        <h3>Estrategia</h3>
+                        <p>Diseñamos un plan detallado con cronograma, entregables y métricas de éxito.</p>
+                    </div>
+                    <div class="proceso__step reveal reveal-delay-3">
+                        <h3>Ejecución</h3>
+                        <p>Construimos tu proyecto con iteraciones semanales y validación constante contigo.</p>
+                    </div>
+                    <div class="proceso__step reveal">
+                        <h3>Lanzamiento</h3>
+                        <p>Desplegamos, monitoreamos y optimizamos para garantizar el mejor resultado desde el día uno.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta" aria-label="Llamada a la acción">
+            <h2>¿Qué servicio necesitas?</h2>
+            <p>Cada proyecto es único. Cuéntanos tu caso y te recomendamos la solución ideal.</p>
+            <a href="index.html#contacto" class="btn">
+                <span class="btn-text">Solicitar Presupuesto</span>
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer__grid">
+            <div class="footer__brand">
+                <img src="img/logo.svg" alt="Atalaya Studio" width="140" height="36">
+                <p>Transformamos ideas en experiencias digitales memorables. Estudio creativo con sede en Latinoamérica.</p>
+            </div>
+            <div>
+                <h4>Navegación</h4>
+                <nav class="footer__links" aria-label="Navegación del pie de página">
+                    <a href="index.html">Inicio</a>
+                    <a href="about.html">Nosotros</a>
+                    <a href="services.html">Servicios</a>
+                    <a href="index.html#contacto">Contacto</a>
+                </nav>
+            </div>
+            <div>
+                <h4>Servicios</h4>
+                <nav class="footer__links" aria-label="Servicios del pie de página">
+                    <a href="services.html">Diseño Web</a>
+                    <a href="services.html">Desarrollo</a>
+                    <a href="services.html">SEO</a>
+                    <a href="services.html">Branding</a>
+                </nav>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 Atalaya Studio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Volver al inicio">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+    </button>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
