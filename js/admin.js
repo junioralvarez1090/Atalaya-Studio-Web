@@ -6,7 +6,7 @@
 
 import { storage } from './storage.js';
 
-const API_URL = window.location.origin + '/api/contacts';
+const API_URL = 'https://atalaya-studio-web.onrender.com/api/contacts';
 
 const SERVICIO_LABELS = {
     'diseno-web': 'Diseño Web',
