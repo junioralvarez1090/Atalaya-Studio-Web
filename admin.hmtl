@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Atalaya Studio | Admin</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+         <!-- Overlay para menú móvil -->
+    <div class="menu-overlay" aria-hidden="true"></div>
+
+    <header class="header" role="banner">
+        <a href="index.html" class="header__logo" aria-label="Atalaya Studio - Inicio">
+            <img src="img/logo.svg" alt="Atalaya Studio" width="160" height="40">
+        </a>
+
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+            ☰
+        </button>
+
+        <nav class="header__menu" id="menu" role="navigation" aria-label="Navegación">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="admin.html" class="active">Admin</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar a modo oscuro">🌙</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="admin-header" aria-label="Panel de administración">
+            <div class="container">
+                <h2>Panel de Contactos</h2>
+                <p>Mensajes recibidos a través del formulario del sitio web</p>
+            </div>
+        </section>
+
+        <section class="admin-content" aria-label="Lista de contactos">
+
+            <div class="admin-stats">
+                <div class="admin-stat">
+                    <div class="admin-stat__number" id="total-count">0</div>
+                    <div class="admin-stat__label">Mensajes totales</div>
+                </div>
+                <div class="admin-stat">
+                    <div class="admin-stat__number" id="today-count">0</div>
+                    <div class="admin-stat__label">Recibidos hoy</div>
+                </div>
+                <div class="admin-stat">
+                    <div class="admin-stat__number" id="services-count">0</div>
+                    <div class="admin-stat__label">Servicios consultados</div>
+                </div>
+            </div>
+
+            <div class="admin-charts">
+                <div class="chart-card">
+                    <h3 class="chart-card__title">Distribución por Servicio</h3>
+                    <div class="dona-wrapper">
+                        <div style="position:relative;">
+                            <div class="dona" id="dona-chart"></div>
+                            <div class="dona__center">
+                                <span class="dona__total" id="dona-total">0</span>
+                                <span class="dona__label">Total</span>
+                            </div>
+                        </div>
+                        <div class="dona-legend" id="dona-legend"></div>
+                    </div>
+                    <div class="chart-empty" id="dona-empty" style="display:none;">Sin datos</div>
+                </div>
+
+                <div class="chart-card">
+                    <h3 class="chart-card__title">Mensajes por Servicio</h3>
+                    <div class="service-bars" id="service-bars"></div>
+                    <div class="chart-empty" id="bars-empty" style="display:none;">Sin datos</div>
+                </div>
+            </div>
+
+            <div class="admin-actions">
+                <button class="btn btn-primary btn-sm" id="btn-refresh">Actualizar</button>
+                <a href="index.html#contacto" class="btn btn-secondary btn-sm">Ir al formulario</a>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                            <th>Servicio</th>
+                            <th>Mensaje</th>
+                            <th>Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contacts-table-body"></tbody>
+                </table>
+                <div class="empty-state" id="empty-state" style="display:none;">
+                    <span class="empty-state__icon" aria-hidden="true">📭</span>
+                    <p>No hay mensajes recibidos aún.</p>
+                </div>
+                <div class="error-state" id="error-state" style="display:none;"></div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer__grid">
+            <div class="footer__brand">
+                <img src="img/logo.svg" alt="Atalaya Studio" width="140" height="36">
+                <p>Transformamos ideas en experiencias digitales memorables.</p>
+            </div>
+            <div>
+                <h4>Navegación</h4>
+                <nav class="footer__links">
+                    <a href="index.html">Inicio</a>
+                    <a href="about.html">Nosotros</a>
+                    <a href="services.html">Servicios</a>
+                    <a href="admin.html">Admin</a>
+                </nav>
+            </div>
+            <div>
+                <h4>Servicios</h4>
+                <nav class="footer__links">
+                    <a href="services.html">Diseño Web</a>
+                    <a href="services.html">Desarrollo</a>
+                    <a href="services.html">SEO</a>
+                    <a href="services.html">Branding</a>
+                </nav>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 Atalaya Studio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Volver al inicio">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+    </button>
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/admin.js"></script>
+</body>
+</html>
